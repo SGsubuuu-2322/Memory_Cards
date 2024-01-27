@@ -15,3 +15,40 @@ body {
   margin: 0;
   background-color: #fff;
 }
+
+h1 {
+  position: relative;
+}
+
+h1 button {
+  position: absolute;
+  right: 0;
+  transform: translate(120%, -50%);
+  z-index: 2;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 2px solid #aaa;
+  background-color: #fff;
+}
+
+.btn-small {
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.btn-ghost {
+  border: none;
+  background-color: transparent;
+}
+
+.clear {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
