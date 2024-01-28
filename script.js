@@ -51,8 +51,15 @@ function createCard(data, index) {
   </div>
     `;
 
+  card.addEventListener("click", () => card.classList.toggle("show-answer"));
+
   cardsEl.push(card);
   cardsContainer.append(card);
+  updateCurrentText();
+}
+
+function updateCurrentText() {
+  currentEl.innerText = `${currentActiveCard + 1} / ${cardsEl.length}`;
 }
 
 createCards();
