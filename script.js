@@ -63,3 +63,15 @@ function updateCurrentText() {
 }
 
 createCards();
+
+nextBtn.addEventListener("click", () => {
+  cardsEl[currentActiveCard].className = "card left";
+  currentActiveCard++;
+
+  if (currentActiveCard > cardsEl.length - 1) {
+    currentActiveCard--;
+  }
+
+  cardsEl[currentActiveCard].className = "card active";
+  updateCurrentText();
+});
