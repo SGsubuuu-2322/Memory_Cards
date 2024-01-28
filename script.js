@@ -75,3 +75,15 @@ nextBtn.addEventListener("click", () => {
   cardsEl[currentActiveCard].className = "card active";
   updateCurrentText();
 });
+
+prevBtn.addEventListener("click", () => {
+  cardsEl[currentActiveCard].className = "card";
+  currentActiveCard--;
+
+  if (currentActiveCard < 0) {
+    currentActiveCard++;
+  }
+
+  cardsEl[currentActiveCard].className = "card active";
+  updateCurrentText();
+});
