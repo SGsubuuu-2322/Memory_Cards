@@ -124,3 +124,9 @@ addCardBtn.addEventListener("click", () => {
     alert("Write both question and answer...");
   }
 });
+
+clearBtn.addEventListener("click", () => {
+  localStorage.clear();
+  cardsContainer.innerHTML = "";
+  window.location.reload();
+});
